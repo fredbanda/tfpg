@@ -76,12 +76,12 @@
 }
 
 @keyframes spin {
-  0% { content: "marketing"; }
-  20% { content: "content"; }
-  40% { content: "engineering"; }
-  60% { content: "crypto"; }
-  80% { content: "consulting"; }
-  100% { content: "business"; }
+  0% { content: "web developers"; }
+  20% { content: "content writers"; }
+  40% { content: "software engineers"; }
+  60% { content: "graphic designers"; }
+  80% { content: "product managers"; }
+  100% { content: "business advisers"; }
 }
 
 #spin::after {
