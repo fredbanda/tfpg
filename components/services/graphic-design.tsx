@@ -16,8 +16,9 @@ const GraphicDesign = () => {
     <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text dark:text-white">We didn&apos;t reinvent the wheel</h2>
-            <p className="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
-            <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
+            <p className="mb-4">
+                In a world driven by digital transformation, partnering with us as your preferred web and software development company guarantees more than just solutions; it ensures innovation, reliability, and seamless experiences. </p>
+            <p>With over a decade of mastery across diverse stacks like MERN, MEAN, MEVN, Serverless, LAMP, PERN, and Ruby on Rails, our expertise is not just powerful—it's transformative. Let's elevate your business together.</p>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
             <Image className="w-full rounded-lg"
