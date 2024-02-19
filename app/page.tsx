@@ -1,12 +1,11 @@
 import SliderOne from "@/components/hero/slider";
 import Navbar from "@/components/navbar/Navbar";
-import { Spotlight } from "@/components/ui/Spotlight";
 import Link from "next/link";
 import GraphicDesign from "../components/services/graphic-design";
 import LegacyCode from "@/components/services/legacy-code";
-import Footer from "@/components/footer/footer";
 import ServiceList from "@/components/services/service-list";
 import ShopifyStores from "@/components/services/shopify-stores";
+import { Spotlight } from "@/components/ui/spotlight";
 
 
 export default function Home() {
