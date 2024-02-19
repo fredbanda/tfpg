@@ -5,7 +5,7 @@ import GraphicDesign from "../components/services/graphic-design";
 import LegacyCode from "@/components/services/legacy-code";
 import ServiceList from "@/components/services/service-list";
 import ShopifyStores from "@/components/services/shopify-stores";
-import { Spotlight } from "../components/ui/spotlight";
+import Spotlight  from "@/components/ui/spotlight";
 
 
 export default function Home() {
