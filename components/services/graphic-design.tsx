@@ -18,7 +18,7 @@ const GraphicDesign = () => {
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text dark:text-white">We didn&apos;t reinvent the wheel</h2>
             <p className="mb-4">
                 In a world driven by digital transformation, partnering with us as your preferred web and software development company guarantees more than just solutions; it ensures innovation, reliability, and seamless experiences. </p>
-            <p>With over a decade of mastery across diverse stacks like MERN, MEAN, MEVN, Serverless, LAMP, PERN, and Ruby on Rails, our expertise is not just powerful—it's transformative. Let's elevate your business together.</p>
+            <p>With over a decade of mastery across diverse stacks like MERN, MEAN, MEVN, Serverless, LAMP, PERN, and Ruby on Rails, our expertise is not just powerful—it&apos;s transformative. Let&apos;s elevate your business together.</p>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
             <Image className="w-full rounded-lg"
