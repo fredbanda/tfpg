@@ -6,6 +6,7 @@ import GraphicDesign from "../components/services/graphic-design";
 import LegacyCode from "@/components/services/legacy-code";
 import Footer from "@/components/footer/footer";
 import ServiceList from "@/components/services/service-list";
+import ShopifyStores from "@/components/services/shopify-stores";
 
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
             <GraphicDesign />
             <ServiceList />
             <LegacyCode />
+            <ShopifyStores />
           </div>
         </div>
      </div>
