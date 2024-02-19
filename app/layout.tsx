@@ -10,7 +10,7 @@ const font = Poppins({
 
 export const metadata: Metadata = {
   title: "The First Pitch Group | Just follow our lead",
-  description: "Your partner for business growth global visibility.",
+  description: "Your partner for business growth & global visibility.",
 };
 
 export default function RootLayout({
