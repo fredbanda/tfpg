@@ -32,7 +32,7 @@ const FrequentAskedQuestions = () => {
                 </span>
               </summary>
               <p className='text-neutral-300 mt-3 group-open:animate-fadeIn'>
-              The First Pitch Group's technical prowess extends to crafting Serverless applications that redefine efficiency. By employing languages like C# and leveraging our expertise in Serverless architectures, we engineer applications that not only scale effortlessly but also ensure optimal performance. Let's embark on a journey where the power of technology meets the elegance of design, elevating your business to unprecedented heights.
+              The First Pitch Group&apos;s technical prowess extends to crafting Serverless applications that redefine efficiency. By employing languages like C# and leveraging our expertise in Serverless architectures, we engineer applications that not only scale effortlessly but also ensure optimal performance. Let&apos;s embark on a journey where the power of technology meets the elegance of design, elevating your business to unprecedented heights.
               </p>
             </details>
           </div>
@@ -57,7 +57,7 @@ const FrequentAskedQuestions = () => {
                 </span>
               </summary>
               <p className='text-neutral-300 mt-3 group-open:animate-fadeIn'>
-              Our decade-long mastery across stacks such as MERN, MEAN, MEVN, Serverless, LAMP, PERN, and Ruby on Rails is the cornerstone of The First Pitch Group's success. It empowers us to not just meet but exceed client expectations. Whether it's developing business applications in C# or orchestrating seamless website migrations, our expertise is not just a tool—it's a transformative force that propels your business forward
+              Our decade-long mastery across stacks such as MERN, MEAN, MEVN, Serverless, LAMP, PERN, and Ruby on Rails is the cornerstone of The First Pitch Group&apos;s success. It empowers us to not just meet but exceed client expectations. Whether it&apos;s developing business applications in C# or orchestrating seamless website migrations, our expertise is not just a tool—it&apos;s a transformative force that propels your business forward
               </p>
             </details>
           </div>
@@ -158,7 +158,7 @@ const FrequentAskedQuestions = () => {
                 </span>
               </summary>
               <p className='text-neutral-300 mt-3 group-open:animate-fadeIn'>
-              Greenfield projects are our playground for innovation. Armed with expertise in stacks like MERN, MEAN, MEVN, Serverless, and more, we embark on projects that redefine possibilities. The First Pitch Group's proficiency in Ruby on Rails, combined with our avant-garde design sensibilities, ensures that your Greenfield projects are not just developed but crafted with finesse, setting new benchmarks for excellence.
+              Greenfield projects are our playground for innovation. Armed with expertise in stacks like MERN, MEAN, MEVN, Serverless, and more, we embark on projects that redefine possibilities. The First Pitch Group&apos;s proficiency in Ruby on Rails, combined with our avant-garde design sensibilities, ensures that your Greenfield projects are not just developed but crafted with finesse, setting new benchmarks for excellence.
               </p>
             </details>
           </div>
