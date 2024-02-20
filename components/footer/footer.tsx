@@ -218,7 +218,7 @@ const Footer= () => {
     <a
       className="font-semibold text-neutral-100 dark:text-neutral-400"
       href="https://www.thefirstpitch.co.za/"
-      >  Eunnygigs. A Company of The First Pitch Group</a>
+      >  The First Pitch Group. Just follow our lead</a>
   </div>
 </footer>    
 </>
