@@ -64,7 +64,7 @@ const FrequentAskedQuestions = () => {
           <div className='py-5'>
             <details className='group'>
               <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
-                <span> What distinguishes The First Pitch Group's approach to web development, graphic design, and business applications?</span>
+                <span> What distinguishes The First Pitch Group&apos;s approach to web development, graphic design, and business applications?</span>
                 <span className='transition group-open:rotate-180'>
                   <svg
                     fill='none'
@@ -115,7 +115,7 @@ const FrequentAskedQuestions = () => {
           <div className='py-5'>
             <details className='group'>
               <summary className='flex justify-between items-center font-medium cursor-pointer list-none'>
-                <span> Can you elaborate on The First Pitch Group's proficiency in data analysis and its role in enhancing business applications?</span>
+                <span> Can you elaborate on The First Pitch Group&apos;s proficiency in data analysis and its role in enhancing business applications?</span>
                 <span className='transition group-open:rotate-180'>
                   <svg
                     fill='none'
