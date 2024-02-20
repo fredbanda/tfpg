@@ -3,11 +3,11 @@ import React from 'react'
 const ServiceList = () => {
   return (
     <div>
-      <div className="px-3 py-20 bg-opacity-10 " >
-        <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 group rounded-md bg-neutral-500 shadow-xl shadow-neutral-100 border ">
+      <div className="px-3 py-20 bg-opacity-10 mt-[-38px] " >
+        <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 group rounded-3xl bg-neutral-500 shadow-xl shadow-neutral-100 border ">
 
             <div
-                className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-500 cursor-pointer">
+                className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-500 cursor-pointer rounded-tl-3xl">
                 <span className="p-5 rounded-full bg-red-500 text-white shadow-lg shadow-red-200"><svg
                         xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" strokeWidth="1.5">
@@ -33,7 +33,7 @@ const ServiceList = () => {
                 <p className="mt-2 text-sm text-neutral-100 ">We are the best Cobol developers in the world. We can set your application to perform like never before. Give us a call today.</p>
             </div>
 
-            <div className="p-10 flex flex-col items-center text-center group   md:lg:xl:border-b hover:bg-slate-500 cursor-pointer">
+            <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-b hover:bg-slate-500 cursor-pointer rounded-tr-3xl">
                 <span className="p-5 rounded-full bg-yellow-500 text-white shadow-lg shadow-yellow-200"><svg
                         xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" strokeWidth="1.5">
@@ -45,7 +45,7 @@ const ServiceList = () => {
             </div>
 
 
-            <div className="p-10 flex flex-col items-center text-center group   md:lg:xl:border-r hover:bg-slate-500 cursor-pointer">
+            <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r hover:bg-slate-500 cursor-pointer rounded-bl-3xl">
                 <span className="p-5 rounded-full bg-lime-500 text-white shadow-lg shadow-lime-200"><svg
                         xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" strokeWidth="1.5">
@@ -55,7 +55,7 @@ const ServiceList = () => {
                 <p className="mt-2 text-sm text-neutral-100">Ever heard of dropshipping or you want to sell your products? Shopify is always a great choice. They have an already proven formulae that work.</p>
             </div>
 
-            <div className="p-10 flex flex-col items-center text-center group    md:lg:xl:border-r hover:bg-slate-500 cursor-pointer">
+            <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r hover:bg-slate-500 cursor-pointer rounded-bl-3xl">
                 <span className="p-5 rounded-full bg-teal-500 text-white shadow-lg shadow-teal-200"><svg
                         xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" strokeWidth="1.5">
@@ -66,7 +66,7 @@ const ServiceList = () => {
                 <p className="mt-2 text-sm text-neutral-100">You have an Idea for an application that will change the world? Well you need people like us who can breathe life into that idea</p>
             </div>
 
-            <div className="p-10 flex flex-col items-center text-center group hover:bg-slate-500 cursor-pointer">
+            <div className="p-10 flex flex-col items-center text-center group hover:bg-slate-500 cursor-pointer rounded-br-3xl">
                 <span className="p-5 rounded-full bg-indigo-500 text-white shadow-lg shadow-indigo-200"><svg
                         xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" strokeWidth="1.5">
@@ -77,13 +77,9 @@ const ServiceList = () => {
                 <p className="mt-2 text-sm text-neutral-100">We have years of working with C# applications and SQL servers so you wont go wrong with us. What are you waiting for?
                 </p>
             </div>
-
-
-
-
         </div>
 
-        <div className="w-full   bg-indigo-600 shadow-xl shadow-indigo-200 py-10 px-20 flex flex-col justify-between items-center">
+        <div className="w-full   bg-indigo-600 shadow-xl shadow-indigo-200 py-10 px-20 flex flex-col justify-between items-center rounded-3xl">
         
             <p className=" text-white"> <span className="text-2xl font-medium items-center">Still Confused ?</span> <br /> <span className="text-lg">Book For Free Career one on one Consultation Today ! </span></p>
             <button className="px-5 py-3 font-medium text-neutral-100 shadow-xl  hover:bg-black duration-150  bg-yellow-400 rounded-md">BOOK AN APPOINTMENT </button>

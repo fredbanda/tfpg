@@ -6,6 +6,9 @@ import LegacyCode from "@/components/services/legacy-code";
 import ServiceList from "@/components/services/service-list";
 import ShopifyStores from "@/components/services/shopify-stores";
 import { Spotlight } from "@/components/ui/spotlight";
+import Brands from "./brands";
+import Services from "@/components/services/services";
+import FrequentAskedQuestions from "@/components/faq/faq";
 
 
 export default function Home() {
@@ -34,6 +37,9 @@ export default function Home() {
             <ServiceList />
             <LegacyCode />
             <ShopifyStores />
+          {/*<Brands />  */}
+          <Services />
+          <FrequentAskedQuestions />
           </div>
         </div>
      </div>
