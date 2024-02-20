@@ -5,14 +5,20 @@ import GraphicDesign from "../components/services/graphic-design";
 import LegacyCode from "@/components/services/legacy-code";
 import ServiceList from "@/components/services/service-list";
 import ShopifyStores from "@/components/services/shopify-stores";
+import { Spotlight } from "@/components/ui/spotlight";
 
 
 export default function Home() {
   return (
      <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Navbar />
-        <div className="p-4 mx-auto relative z-10 w-full pt-10 md-pt-18 px-2">
-          <div className="text-4xl pb-5 md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg--neutral-400 bg-opacity-50">
+        <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
+          <div
+          className="text-4xl pb-5 md:text-7xl px-6 text-center  bg-clip-text text-transparent 
+             bg-gradient-to-b from-neutral-50
+              to bg-neutral-400 bg-opacity-50"
+        >
+          <Spotlight className="hidden md:flex md:-top-80 left-20  " fill="white" />
             Partner with us <br /> for immeasurable growth!
           </div>
           <p className="mt-4 text-lg font-normal text-neutral-400 max-w-2xl text-center mx-auto px-4">Since 2013, we&apos;ve been dedicated to delivering top-tier software and web solutions, empowering businesses with cutting-edge technology. It all starts with The First Pitch.</p>
