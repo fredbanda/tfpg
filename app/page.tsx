@@ -22,7 +22,7 @@ export default function Home() {
               to bg-neutral-400 bg-opacity-50"
         >
           <Spotlight className="hidden md:flex md:-top-80 left-20  " fill="white" />
-            Partner with us <br /> for immeasurable growth!
+            Partner with us for<br /> an immeasurable growth!
           </div>
           <p className="mt-4 text-lg font-normal text-neutral-400 max-w-2xl text-center mx-auto px-4">Since 2013, we&apos;ve been dedicated to delivering top-tier software and web solutions, empowering businesses with cutting-edge technology. It all starts with The First Pitch.</p>
           <Link href={"/book"}
