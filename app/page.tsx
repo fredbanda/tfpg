@@ -1,3 +1,4 @@
+"use client"
 import SliderOne from "@/components/hero/slider";
 import Navbar from "@/components/navbar/Navbar";
 import Link from "next/link";
@@ -6,12 +7,39 @@ import LegacyCode from "@/components/services/legacy-code";
 import ServiceList from "@/components/services/service-list";
 import ShopifyStores from "@/components/services/shopify-stores";
 import { Spotlight } from "@/components/ui/spotlight";
-import Brands from "./brands";
 import Services from "@/components/services/services";
 import FrequentAskedQuestions from "@/components/faq/faq";
+import { useRef } from "react";
+import Pricing from "@/components/pricing/pricing";
 
 
 export default function Home() {
+  const websiteDesignRef = useRef<HTMLDivElement>(null);
+  const serviceListRef = useRef<HTMLDivElement>(null);
+  const legacyCodeRef = useRef<HTMLDivElement>(null);
+  const shopifyStoresRef = useRef<HTMLDivElement>(null);
+  const servicesRef = useRef<HTMLDivElement>(null);
+  const pricingRef = useRef<HTMLDivElement>(null);
+
+  const scrollToWebsiteDesign = () => {
+    websiteDesignRef.current?.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+  const scrollToServiceList = () => {
+    serviceListRef.current?.scrollIntoView({behavior: "smooth"});
+  }
+  const scrollToLegacyCode = () => {
+    legacyCodeRef.current?.scrollIntoView({behavior: "smooth"});
+  }
+  const scrollToShopifyStores = () => {
+    shopifyStoresRef.current?.scrollIntoView({behavior: "smooth"});
+  }
+  const scrollToServices = () => {
+    servicesRef.current?.scrollIntoView({behavior: "smooth"});
+  }
+  const scrollToPricing = () => {
+    pricingRef.current?.scrollIntoView({behavior: "smooth"});
+  }
+
   return (
      <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Navbar />
@@ -37,8 +65,8 @@ export default function Home() {
             <ServiceList />
             <LegacyCode />
             <ShopifyStores />
-          {/*<Brands />  */}
-          <Services />
+            <Services />
+            <Pricing />
           <FrequentAskedQuestions />
           </div>
         </div>
