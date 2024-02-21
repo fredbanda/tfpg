@@ -42,7 +42,16 @@ export default function Home() {
 
   return (
      <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-        <Navbar />
+        <Navbar 
+        scrollToWebDesign={scrollToWebsiteDesign}
+        scrollToServiceList={scrollToServiceList}
+        scrollToLegacyCode={scrollToLegacyCode}
+        scrollToPricing={scrollToPricing}
+        scrollToShopifyStores={scrollToShopifyStores} scrollToServices={function (): void {
+          throw new Error("Function not implemented.");
+        } }        />
+
+
         <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
           <div
           className="text-4xl pb-5 md:text-7xl px-6 text-center  bg-clip-text text-transparent 
@@ -60,13 +69,13 @@ export default function Home() {
           </Link>
 
           <div className="w-full">
-            <SliderOne />
-            <GraphicDesign />
-            <ServiceList />
-            <LegacyCode />
-            <ShopifyStores />
-            <Services />
-            <Pricing />
+            <SliderOne  />
+            <div ref={websiteDesignRef}><GraphicDesign /></div>
+            <div ref={serviceListRef}><ServiceList /></div>
+            <div ref={legacyCodeRef}><LegacyCode /></div>
+            <div ref={shopifyStoresRef}><ShopifyStores /></div>
+            <div ref={servicesRef}><Services /></div>
+            <div ref={pricingRef}><Pricing /></div>
           <FrequentAskedQuestions />
           </div>
         </div>
