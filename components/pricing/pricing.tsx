@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Pricing = () => {
@@ -41,10 +42,10 @@ const Pricing = () => {
                         clipRule="evenodd"></path>
                     </svg>3 Months of free editing</li>
                 </ul>
-                <a href="/order" aria-describedby="product2"
+                <Link href="/book" aria-describedby="product2"
                 className="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                 Get Started
-                </a>
+                </Link>
             </div>
 
             <div className="bg-white/5 ring-2 ring-indigo-500 rounded-3xl p-8 xl:p-10">
@@ -76,10 +77,10 @@ const Pricing = () => {
                         clipRule="evenodd"></path>
                     </svg>Whole 6 Months of free editing </li>
                 </ul>
-                <a href="/order" aria-describedby="product2"
+                <Link href="/book" aria-describedby="product2"
                 className="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                 Get Started
-                </a>
+                </Link>
             </div>
 
             <div className="ring-1 ring-white/10 rounded-3xl p-8 xl:p-10">
@@ -110,10 +111,10 @@ const Pricing = () => {
                         clipRule="evenodd"></path>
                     </svg>12 months of free editing & support</li>
                 </ul>
-                <a href="/order" aria-describedby="product2"
+                <Link href="/book" aria-describedby="product2"
                 className="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                     Get Started
-                </a>
+                </Link>
             </div>
             </div>
         </div>

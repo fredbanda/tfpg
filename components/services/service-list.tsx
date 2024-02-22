@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const ServiceList = () => {
@@ -82,11 +83,12 @@ const ServiceList = () => {
         <div className="w-full   bg-indigo-600 shadow-xl shadow-indigo-200 py-10 px-20 flex flex-col justify-between items-center rounded-3xl">
         
             <p className=" text-white"> <span className="text-2xl font-medium items-center">Still Confused ?</span> <br /> <span className="text-lg">Book For Free Career one on one Consultation Today ! </span></p>
+            <Link href="/book">
             <button className="px-5 py-3 font-medium text-neutral-100 shadow-xl  hover:bg-black duration-150  bg-yellow-400 rounded-md">BOOK AN APPOINTMENT </button>
+            </Link>
         </div>
-
     </div>
-    </div>
+</div>
   )
 }
 
