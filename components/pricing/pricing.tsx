@@ -19,7 +19,7 @@ const Pricing = () => {
                 </div>
                 <p className="mt-4 text-sm leading-6 text-gray-300">Perfect for that side hustle or just starting out.</p>
                 <p className="mt-6 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold tracking-tight text-white">ZRA 2999.00</span><span className="text-sm font-semibold leading-6 text-gray-300"></span>
+                <span className="text-4xl font-bold tracking-tight text-white">ZRA 299.00</span><span className="leading-6 text-gray-300 text-4xl font-bold"> / Mo</span>
                 </p>
 
                 <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
@@ -40,7 +40,7 @@ const Pricing = () => {
                     <path fillRule="evenodd"
                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                         clipRule="evenodd"></path>
-                    </svg>3 Months of free editing</li>
+                    </svg>minimum 6 months</li>
                 </ul>
                 <Link href="/book" aria-describedby="product2"
                 className="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
@@ -55,7 +55,7 @@ const Pricing = () => {
                 </div>
                 <p className="mt-4 text-sm leading-6 text-gray-300">For businesses looking to expand their reach including but not limited to online stores</p>
                 <p className="mt-6 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold tracking-tight text-white">ZAR 3999.00</span><span className="text-sm font-semibold leading-6 text-gray-300"></span>
+                <span className="text-4xl font-bold tracking-tight text-white">ZAR 399.00</span><span className="leading-6 text-gray-300 text-4xl font-bold"> / Mo</span>
                 </p>
                 <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
                 <li className="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -75,7 +75,7 @@ const Pricing = () => {
                     <path fillRule="evenodd"
                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                         clipRule="evenodd"></path>
-                    </svg>Whole 6 Months of free editing </li>
+                    </svg>Minimum 6 months </li>
                 </ul>
                 <Link href="/book" aria-describedby="product2"
                 className="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
@@ -89,7 +89,7 @@ const Pricing = () => {
                 </div>
                 <p className="mt-4 text-sm leading-6 text-gray-300">For those businesses looking for an upper hand over their competition</p>
                 <p className="mt-6 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold tracking-tight text-white">ZAR 5999.00</span><span className="text-sm font-semibold leading-6 text-gray-300"></span>
+                <span className="text-4xl font-bold tracking-tight text-white">ZAR 599.00</span><span className="  leading-6 text-gray-300 text-4xl font-bold"> / Mo</span>
                 </p>
                 <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10">
                 <li className="flex gap-x-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -109,7 +109,7 @@ const Pricing = () => {
                     <path fillRule="evenodd"
                         d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
                         clipRule="evenodd"></path>
-                    </svg>12 months of free editing & support</li>
+                    </svg>Minimum 6 Months</li>
                 </ul>
                 <Link href="/book" aria-describedby="product2"
                 className="bg-indigo-500 text-white shadow-sm hover:bg-indigo-400 focus-visible:outline-indigo-500 mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
