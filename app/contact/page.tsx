@@ -144,7 +144,7 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-            Let&apos;s talk about how Bird can help your team work better.
+            Let&apos;s talk about how The First Pitch Group can help your team work better.
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
