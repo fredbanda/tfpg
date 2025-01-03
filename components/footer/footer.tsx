@@ -3,6 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 
 const Footer= () => {
+  const currentYear = new Date().getFullYear()
+
   return (
     <>
 <footer
@@ -214,7 +216,7 @@ const Footer= () => {
   </div>
 
   <div className="text-neutral-100 p-6 text-center dark:bg-black">
-    <span>© 2024 Copyright: </span>
+    <span>© {currentYear} Copyright: </span>
     <a
       className="font-semibold text-neutral-100 dark:text-neutral-400"
       href="https://www.thefirstpitch.co.za/"

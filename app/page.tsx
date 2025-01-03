@@ -11,6 +11,8 @@ import Services from "@/components/services/services";
 import FrequentAskedQuestions from "@/components/faq/faq";
 import { useRef } from "react";
 import Pricing from "@/components/pricing/pricing";
+import Head from "next/head";
+import ChatbaseChatbot from "@/components/eunny-chatbot";
 
 
 export default function Home() {
@@ -40,7 +42,43 @@ export default function Home() {
     pricingRef.current?.scrollIntoView({behavior: "smooth"});
   }
 
+  
+
   return (
+    <>
+<Head>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `(function(){
+        if(!window.chatbase||window.chatbase("getState")!=="initialized"){
+          window.chatbase=(...arguments)=>{
+            if(!window.chatbase.q){window.chatbase.q=[]}
+            window.chatbase.q.push(arguments)
+          };
+          window.chatbase=new Proxy(window.chatbase,{
+            get(target,prop){
+              if(prop==="q"){return target.q}
+              return(...args)=>target(prop,...args)
+            }
+          })
+        }
+        const onLoad=function(){
+          const script=document.createElement("script");
+          script.src="https://www.chatbase.co/embed.min.js";
+          script.id="sKLuRxfnOKKFHHrV-UdmB";
+          script.domain="www.chatbase.co";
+          document.body.appendChild(script)
+        };
+        if(document.readyState==="complete"){
+          onLoad()
+        }else{
+          window.addEventListener("load",onLoad)
+        }
+      })();`,
+    }}
+  ></script>
+</Head>
+
      <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Navbar 
         scrollToWebDesign={scrollToWebsiteDesign}
@@ -77,9 +115,11 @@ export default function Home() {
             <div ref={servicesRef}><Services /></div>
             <div ref={pricingRef}><Pricing /></div>
           <FrequentAskedQuestions />
+          <ChatbaseChatbot />
           </div>
         </div>
      </div>
+     </>
   );
 }
   
