@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import React from 'react'
 
 const GraphicDesign = () => {
@@ -21,16 +21,14 @@ const GraphicDesign = () => {
             <p>With over a decade of mastery across diverse stacks like MERN, MEAN, MEVN, Serverless, LAMP, PERN, and Ruby on Rails, our expertise is not just powerful—it&apos;s transformative. Let&apos;s elevate your business together.</p>
         </div>
         <div className="grid grid-cols-2 gap-4 mt-8">
-            <Image className="w-full rounded-lg"
-            priority 
+            <img className="w-full rounded-lg"
             src={"/assets/business2.jpg"}
             alt="office content 1"
             width={500} 
             height={500}
             />
-            <Image className="mt-4 w-full lg:mt-10 rounded-lg" 
+            <img className="mt-4 w-full lg:mt-10 rounded-lg" 
             src={"/assets/business3.jpg"}
-            priority
             width={500}
             height={500}
             alt="office content 2" />

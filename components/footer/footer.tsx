@@ -86,7 +86,7 @@ const Footer= () => {
       <div className="">
         <h6
           className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
-          <Image 
+          <img
           src={'/assets/logo.png'}
           alt='logo'
           width={30}
@@ -106,22 +106,22 @@ const Footer= () => {
         </h6>
         <p className="mb-4">
           <a href="#!" className="text-neutral-100 dark:text-neutral-200"
-            >Angular</a
+            >App Development</a
           >
         </p>
         <p className="mb-4">
           <a href="#!" className="text-neutral-100 dark:text-neutral-200"
-            >React</a
+            >Web Development</a
           >
         </p>
         <p className="mb-4">
           <a href="#!" className="text-neutral-100 dark:text-neutral-200"
-            >Vue</a
+            >Greenfield Projects</a
           >
         </p>
         <p>
           <a href="#!" className="text-neutral-100 dark:text-neutral-200"
-            >Laravel</a
+            >UI/UX Design</a
           >
         </p>
       </div>

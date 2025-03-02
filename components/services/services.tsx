@@ -1,6 +1,7 @@
 'use client'
 
 import { CardHoverEffectDemo } from "../../app/snippets/card-hover-effect-snippet";
+import { NocodeServices } from "./nocode-services";
 
 const Services = () => {
     return ( <div className="max-w-5xl mx-auto py-20">
@@ -17,6 +18,8 @@ const Services = () => {
         </p>
 
         <CardHoverEffectDemo />
+
+       
 
     </div> 
     

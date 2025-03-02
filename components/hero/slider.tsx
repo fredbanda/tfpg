@@ -31,10 +31,11 @@
     return (
         <div>
             <Slider {...settings}>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business1.jpg"}
                         alt="hero" 
                         width={600}
@@ -43,10 +44,11 @@
                         />
                         </div> 
                         </>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business2.jpg"}
                         alt="hero" 
                         width={600}
@@ -55,10 +57,11 @@
                         />
                         </div> 
                         </>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business3.jpg"}
                         alt="hero" 
                         width={600}
@@ -67,10 +70,11 @@
                         />
                         </div> 
                         </>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business4.jpg"}
                         alt="hero" 
                         width={600}
@@ -79,10 +83,11 @@
                         />
                         </div> 
                         </>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business5.jpg"}
                         alt="hero" 
                         width={600}
@@ -91,10 +96,11 @@
                         />
                         </div> 
                         </>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business6.jpg"}
                         alt="hero" 
                         width={600}
@@ -103,10 +109,11 @@
                         />
                         </div> 
                         </>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business7.jpg"}
                         alt="hero" 
                         width={600}
@@ -115,10 +122,11 @@
                         />
                         </div> 
                         </>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business8.jpg"}
                         alt="hero" 
                         width={600}
@@ -127,10 +135,11 @@
                         />
                         </div> 
                         </>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business9.jpg"}
                         alt="hero" 
                         width={600}
@@ -139,10 +148,11 @@
                         />
                         </div> 
                         </>
-                <>
+                {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
                 <div className="rounded-md px-2 md:p-10">
-                    <Image
-                        priority
+                    <img
+                        
                         src={"/assets/business10.jpg"}
                         alt="hero" 
                         width={600}

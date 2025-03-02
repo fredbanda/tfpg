@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { NocodeServices } from "./nocode-services";
 
 const stores = [
   {
@@ -26,7 +27,7 @@ const stores = [
 const ShopifyStores = () => {
   return (
     <section
-      className=" mt-10 md:py-10 bg-[#f6f5f4] w-full
+      className=" mt-10 md:py-10 bg-slate-100 w-full
     rounded-3xl
   
   "
@@ -42,11 +43,12 @@ const ShopifyStores = () => {
         <div className="md:flex items-center justify-center  px-10 ">
           {stores.map((store, index) => (
             <div
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={index}
               className="flex flex-col items-center justify-center mt-10 md:w-2/3 mx-auto"
             >
               <div className="flex flex-col items-center justify-center ">
-                <Image
+                <img
                   src={store.image}
                   alt="shopify store"
                   width={400}
@@ -65,6 +67,8 @@ const ShopifyStores = () => {
           ))}
         </div>
       </div>
+<hr className="mt-10 mb-10" />
+      <NocodeServices />
     </section>
   );
 };

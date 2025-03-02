@@ -30,10 +30,10 @@ const SliderOne = () => {
   return (
     <div>
       <Slider {...settings}>
-        <>
+        {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
           <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
+            <img
               src="/images/business.jpeg"
               alt="logo"
               width={500}
@@ -45,10 +45,10 @@ const SliderOne = () => {
           </div>
         </>
 
-        <>
+        {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
           <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
+            <img
               src="/images/coffe.jpeg"
               alt="logo"
               width={500}
@@ -60,10 +60,8 @@ const SliderOne = () => {
           </div>
         </>
 
-        <>
-          <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
+        <div className="rounded-md px-2 md:p-10">
+            <img
               src="/images/small-business-3.webp"
               alt="logo"
               width={500}
@@ -73,12 +71,11 @@ const SliderOne = () => {
                       "
             />
           </div>
-        </>
 
-        <>
+        {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
           <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
+            <img
               src="/images/man.jpeg"
               alt="logo"
               width={500}
@@ -90,10 +87,10 @@ const SliderOne = () => {
           </div>
         </>
 
-        <>
+        {/* biome-ignore lint/complexity/noUselessFragments: <explanation> */}
+<>
           <div className="rounded-md px-2 md:p-10">
-            <Image
-              priority
+            <img
               src="/images/image-business.jpeg"
               alt="logo"
               width={500}

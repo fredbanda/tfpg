@@ -42,7 +42,7 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
           <feBlend
             mode="normal"
             in="SourceGraphic"
-            in2="BackgroundImageFix"
+            in2="BackgroundFix"
             result="shape"
           ></feBlend>
           <feGaussianBlur

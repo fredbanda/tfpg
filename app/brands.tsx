@@ -34,8 +34,10 @@ const Brands = () => {
   return (
     <div>
       <div className=" p-4   mx-auto relative z-10  w-full pt-20 md:pt-32">
-        <div className="text-4xl md:pb-8 md:text-7xl text-center 
-        bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
+        <div
+          className="text-4xl md:pb-8 md:text-7xl text-center 
+        bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50"
+        >
           The best brands <br /> choose us
         </div>
 
@@ -46,9 +48,9 @@ const Brands = () => {
 
         <div className="grid grid-cols-3  items-center justify-center  mx-auto md:w-3/5 cursor-pointer">
           {logos.map((logo, i) => (
+            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
             <div key={i} className="p-4 md:p-20">
-              <Image
-                priority
+              <img
                 src={logo.image}
                 width={500}
                 height={500}
@@ -70,7 +72,7 @@ const Brands = () => {
         </div>
 
         <div className="items-center flex justify-center flex-col text-white">
-          <Image
+          <img
             src="/images/logo.svg"
             alt="logo"
             width={1000}

@@ -47,7 +47,9 @@ export default function Home() {
   return (
     <>
 <Head>
-  <script
+  {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
+<script
+    // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
     dangerouslySetInnerHTML={{
       __html: `(function(){
         if(!window.chatbase||window.chatbase("getState")!=="initialized"){
@@ -77,6 +79,9 @@ export default function Home() {
       })();`,
     }}
   ></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Expert web design & development with PHP, Laravel, React, Next.js & more. We build full projects, no-code sites & AI assistants. Elevate your digital presence!" />
+  <meta name="keywords" content="The First Pitch" />
 </Head>
 
      <div className="w-full md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
@@ -85,6 +90,7 @@ export default function Home() {
         scrollToServiceList={scrollToServiceList}
         scrollToLegacyCode={scrollToLegacyCode}
         scrollToPricing={scrollToPricing}
+        // biome-ignore lint/complexity/useArrowFunction: <explanation>
         scrollToShopifyStores={scrollToShopifyStores} scrollToServices={function (): void {
           throw new Error("Function not implemented.");
         } }        />
