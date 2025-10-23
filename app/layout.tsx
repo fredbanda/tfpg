@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/footer/footer";
 import Script from "next/script";
 import { GoogleAnalyticsTracking } from "@/components/google-tag-manager";
+import { Analytics } from "@vercel/analytics/next";
+import Footer from "@/components/footer/footer";
 
 const font = Poppins({
   subsets: ["latin"],
@@ -47,11 +48,13 @@ export default function RootLayout({
             src="https://www.googletagmanager.com/ns.html?id=GTM-N5S23ZZ5"
             height="0"
             width="0"
-            style={{display:"none", visibility:"hidden"}}
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
         <GoogleAnalyticsTracking />
         {children}
+        <Analytics mode="production" />;
+        <Footer />
       </body>
     </html>
   );

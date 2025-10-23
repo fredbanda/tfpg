@@ -9,13 +9,35 @@ export const GoogleAnalyticsTracking = () => {
         src="https://www.googletagmanager.com/gtag/js?id=G-C2DJH1NFG6"
         strategy="afterInteractive"
         />
-        <Script>
-            {`        window.dataLayer = window.dataLayer || [];
+        <Script id="google-analytics" strategy="afterInteractive">
+            {`
+            window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-C2DJH1NFG6');`}
+            gtag('config', 'G-C2DJH1NFG6');
+            `}
         </Script>
+
+        {/* Google Tag Manager */}
+        <Script 
+        async 
+        src="https://www.googletagmanager.com/gtag/js?id=G-C2DJH1NFG6"
+        strategy="afterInteractive"
+         />
+
+         <Script id="google-analytics" strategy="afterInteractive">
+            {
+                `
+                 window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-C2DJH1NFG6');
+
+                `
+            }
+         </Script>
       
         </>
     
