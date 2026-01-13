@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+// @ts-ignore TS doesn't have type declarations for global CSS side-effect import in this project
 import "./globals.css";
 import Script from "next/script";
 import { GoogleAnalyticsTracking } from "@/components/google-tag-manager";
