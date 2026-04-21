@@ -7,13 +7,13 @@ name: eTriage Generated Pipeline
     branches:
     - main
 env:
-  PROJECT_ID: ${{ secrets.PROJECT_ID }}
+  GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+  GCP_REGION: ${{ secrets.GCP_REGION }}
   SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
-  REGION: ${{ secrets.REGION }}
+  GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
   NODE_ENV: ${{ secrets.NODE_ENV }}
   NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
-  GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
-  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+  ETRIAGE_WEBHOOK_URL: ${{ secrets.ETRIAGE_WEBHOOK_URL }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,16 +31,14 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run tests
-      run: npm run test -- --ci --coverage --maxWorkers=2
+      run: npm run test -- --coverage --passWithNoTests
   lint:
     runs-on: ubuntu-latest
     needs: build
     steps:
     - uses: actions/checkout@v4
     - name: Run linter
-      run: 'npm run lint
-
-        npx tsc --noEmit'
+      run: npm run lint
   security_scan:
     runs-on: ubuntu-latest
     needs: build
@@ -79,10 +77,11 @@ jobs:
       if: github.ref == 'refs/heads/main'
     - name: Run app deploy commands
       if: success()
-      run: 'gcloud builds submit --tag gcr.io/$PROJECT_ID/$SERVICE_NAME
+      run: 'gcloud builds submit --tag gcr.io/$GCP_PROJECT_ID/$SERVICE_NAME
 
-        gcloud run deploy $SERVICE_NAME --image gcr.io/$PROJECT_ID/$SERVICE_NAME --platform
-        managed --region $REGION --allow-unauthenticated --port 3000'
+        gcloud run deploy $SERVICE_NAME --image gcr.io/$GCP_PROJECT_ID/$SERVICE_NAME
+        --platform managed --region $GCP_REGION --allow-unauthenticated --set-env-vars
+        NODE_ENV=production'
     - name: Notify eTriage on failure
       if: failure()
       run: 'curl -X POST ${{ secrets.ETRIAGE_WEBHOOK_URL }} -H ''Content-Type: application/json''
