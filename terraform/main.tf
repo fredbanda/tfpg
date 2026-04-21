@@ -28,3 +28,10 @@ resource "google_cloud_run_v2_service_iam_member" "public" {
   role     = "roles/run.invoker"
   member   = "allUsers"
 }
+
+# google_storage_bucket
+resource "google_storage_bucket" "app" {
+  name     = "${var.app_name}-${var.environment}-bucket"
+  location = var.gcp_region
+  versioning { enabled = true }
+}
