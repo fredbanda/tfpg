@@ -1,0 +1,84 @@
+name: eTriage Generated Pipeline
+'on':
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+env:
+  PROJECT_ID: ${{ secrets.PROJECT_ID }}
+  SERVICE_NAME: ${{ secrets.SERVICE_NAME }}
+  REGION: ${{ secrets.REGION }}
+  NODE_ENV: ${{ secrets.NODE_ENV }}
+  NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
+  GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up runtime
+      uses: actions/setup-node@v4
+    - name: Install dependencies
+      run: 'npm ci
+
+        npm run build'
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run tests
+      run: npm run test -- --ci --coverage --maxWorkers=2
+  lint:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run linter
+      run: 'npm run lint
+
+        npx tsc --noEmit'
+  security_scan:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v4
+    - name: Security scan
+      run: 'npx snyk test --severity-threshold=high
+
+        npx snyk code test'
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+    - test
+    - lint
+    - security_scan
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@v4
+    - name: Authenticate to GCP
+      uses: google-github-actions/auth@v2
+      with:
+        credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+    - name: Deploy
+      run: 'gcloud builds submit --tag gcr.io/$PROJECT_ID/$SERVICE_NAME
+
+        gcloud run deploy $SERVICE_NAME --image gcr.io/$PROJECT_ID/$SERVICE_NAME --platform
+        managed --region $REGION --allow-unauthenticated --set-env-vars NODE_ENV=production'
+    - name: Notify eTriage monitor
+      if: failure()
+      run: 'curl -X POST ${{ secrets.ETRIAGE_WEBHOOK_URL }} -H ''Content-Type: application/json''
+        -d ''{"pipeline_id":"${{ github.run_id }}","job_id":"deploy","error_type":"deploy_failure","logs":"Deploy
+        stage failed on ${{ github.sha }}","source":"github_actions"}'''
+  monitor:
+    runs-on: ubuntu-latest
+    needs: deploy
+    if: always()
+    steps:
+    - name: Report pipeline status to eTriage
+      run: 'curl -X POST ${{ secrets.ETRIAGE_WEBHOOK_URL }} -H ''Content-Type: application/json''
+        -d ''{"pipeline_id":"${{ github.run_id }}","job_id":"monitor","error_type":"pipeline_complete","logs":"Pipeline
+        finished with status: ${{ job.status }}","source":"github_actions"}'''
