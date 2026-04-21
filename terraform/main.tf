@@ -10,7 +10,7 @@ provider "google" {
   region  = var.gcp_region
 }
 
-# google_cloud_run_service
+# GOOGLE CLOUD RUN SERVICE
 resource "google_cloud_run_v2_service" "app" {
   name     = var.app_name
   location = var.gcp_region
